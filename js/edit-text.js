@@ -38,7 +38,7 @@ export class EditText {
 
     // Add Class
     this.save.innerHTML = "Save";
-    this.save.classList.add("btn-save");
+    this.save.classList.add("modal__save ");
     this.input.classList.add("edittext__input");
 
     // Add Event Listeners
