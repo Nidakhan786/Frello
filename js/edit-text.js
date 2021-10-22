@@ -31,15 +31,14 @@ export class EditText {
     // Create Elements
     this.input = document.createElement("input");
     this.save = document.createElement("button");
-
-    // Add Properties
-    this.p.remove();
-    this.input.value = prevTitle;
-
     // Add Class
     this.save.innerHTML = "Save";
-    this.save.classList.add("modal__save ");
+    this.save.classList.add("modal__save");
     this.input.classList.add("edittext__input");
+    // Add Properties
+
+    this.input.value = prevTitle;
+    this.p.remove();
 
     // Add Event Listeners
     this.save.addEventListener("click", () => {
