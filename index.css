@@ -217,7 +217,7 @@ header {
   font-size: 1.1em;
 }
 
-.btn-save {
+.modal__save {
   background-color: rgb(191 128 203);
   width: fit-content;
   color: white;
