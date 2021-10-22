@@ -1,0 +1,19 @@
+{
+  "name": "frello",
+  "version": "1.0.0",
+  "description": "Trello Clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nidakhan786/Frello.git"
+  },
+  "author": "Nida Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nidakhan786/Frello/issues"
+  },
+  "homepage": "https://github.com/Nidakhan786/Frello#readme"
+}
