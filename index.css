@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  /*background-color: rgb(30, 30, 95);*/
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background-attachment: fixed;
+  cursor: #262626;
+  min-width: max-content;
+}
+body::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #434343;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #434343, #434343 1px, #111 0, #111);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.329);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.lists {
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: max-content;
+  list-style: none;
+}
+/** add list form **/
+.addlists {
+  padding: 10px;
+  border: none;
+  margin: 13px;
+  border-radius: 3px;
+  width: 272px;
+  height: fit-content;
+  order: 1;
+  color: #444444fa;
+  background: #ffffff52;
+}
+.addlists:hover {
+  cursor: pointer;
+}
+.addlists__form {
+  display: none;
+  text-align: center;
+}
+.addlists__title {
+  width: -webkit-fill-available;
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+}
+.addlists__button {
+  margin: 9px 0 0 0;
+  border: none;
+  border-radius: 3px;
+  padding: 9px;
+  color: #fff;
+  background: rgb(131, 58, 180);
+}
+.addlists__input {
+  display: block;
+}
+
+.tasklist__container {
+  background: #ebecf0;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 10px;
+  width: 272px;
+}
+.tasklist__title:hover {
+  cursor: pointer;
+}
+.tasklist__title {
+  word-wrap: break-word;
+  clear: both;
+  color: #172b4d;
+  display: block;
+  margin: 0 0 4px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.addtask {
+  display: flex;
+}
+.addtask__button {
+  border: none;
+  background: rgba(255, 255, 255, 0.651);
+  padding: 9px;
+  color: grey;
+  border-radius: 3px 0px 0px 3px;
+}
+.addtask__button:hover {
+  background: rgb(238, 174, 202);
+  color: black;
+}
+
+.addtask__input {
+  border: none;
+  list-style: none;
+  background: rgb(213 213 213 / 42%);
+  padding: 8px;
+  border-radius: 3px;
+  color: #5e6c84;
+  display: block;
+  flex: 1 0 auto;
+  position: relative;
+  text-decoration: none;
+}
+
+.task {
+  background: #fff;
+  border-radius: 3px;
+  margin: 5px 0 0 0;
+  padding: 3px;
+  box-shadow: 0 1px 0 #091e4240;
+  display: flex;
+  justify-content: space-between;
+}
+.task:hover {
+  background: rgba(255, 255, 255, 0.096);
+  cursor: pointer;
+}
+.task__delete {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  color: #00000091;
+}
+.task__delete:hover {
+  color: red;
+}
+
+.task__title {
+  word-wrap: break-word;
+  clear: both;
+  flex: 1;
+  color: #172b4d;
+  display: block;
+  margin: 0 0 4px 3px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.task__title:hover {
+  cursor: pointer;
+}
+
+.modal__container {
+  display: flex;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  top: 0;
+  left: 0;
+  background-color: rgb(235, 235, 235);
+  width: 500px;
+  min-height: 300px;
+
+  margin: auto;
+
+  padding: 1em;
+  border-radius: 4px;
+}
+
+.modal__title {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.modal__description {
+  margin-bottom: 2em;
+  line-height: 1.5em;
+}
+.modal__close {
+  float: right;
+  border: none;
+  font-size: 1.2em;
+}
+.modal__close:hover {
+  color: red;
+}
+
+.modal__description textarea {
+  width: 100%;
+  height: 5em;
+  padding: 0.5em;
+  font-size: 1.1em;
+}
+
+.btn-save {
+  background-color: rgb(191 128 203);
+  width: fit-content;
+  color: white;
+  border: none;
+  border-radius: 4px;
+
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+.logo {
+  color: #3d3d3dfa;
+  font-size: 2rem;
+  padding: 3px;
+}
+.header__title {
+  margin-left: 10px;
+  color: #3d3d3dfa;
+}
+.root {
+  margin-top: 75px;
+}
+.edittext {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.edittext__input {
+  border-radius: 3px;
+  border: none;
+  padding: 6px;
+  min-width: -webkit-fill-available;
+  background: #e4d8e7;
+}
